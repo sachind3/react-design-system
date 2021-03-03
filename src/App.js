@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Navbar from "./Navbar";
+import ColorPage from "./pages/ColorPage";
+import TypographyPage from "./pages/TypographyPage";
+import SpacePage from "./pages/SpacePage";
+import ButtonPage from "./pages/ButtonPage";
+import InputPage from "./pages/InputPage";
+import GridPage from "./pages/GridPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <main>
+          <aside>
+            <Navbar />
+          </aside>
+          <section>
+            <Switch>
+              <Route exact path="/">
+                <ColorPage pageTitle="Colors" />
+              </Route>
+              <Route path="/typography">
+                <TypographyPage pageTitle="Typography" />
+              </Route>
+              <Route path="/spaces">
+                <SpacePage pageTitle="Spaces" />
+              </Route>
+              <Route path="/buttons">
+                <ButtonPage pageTitle="Buttons" />
+              </Route>
+              <Route path="/inputs">
+                <InputPage pageTitle="Inputs" />
+              </Route>
+              <Route path="/grid">
+                <GridPage pageTitle="Grid" />
+              </Route>
+            </Switch>
+          </section>
+        </main>
+      </Router>
+    </>
   );
 }
 

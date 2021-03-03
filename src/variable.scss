@@ -1,0 +1,28 @@
+$color--dafault: #66615b;
+$color--primary: #51cbce;
+$color--info: #51bcda;
+$color--success: #198754;
+$color--warning: #fbc658;
+$color--danger: #f5593d;
+$color--dark: #212529;
+$color--white: #fff;
+$color--transparent: transparent;
+
+$colors: (
+  default: #66615b,
+  primary: #51cbce,
+  info: #51bcda,
+  success: #198754,
+  warning: #fbc658,
+  danger: #f5593d,
+  dark: #212529,
+  white: #fff,
+  transparent: transparent,
+);
+$sizes: (
+  small: 2rem,
+  medium: 2.5rem,
+  large: 3rem,
+);
+
+$transition: all 0.2s ease-in-out;

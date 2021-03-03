@@ -6,6 +6,7 @@ import SpacePage from "./pages/SpacePage";
 import ButtonPage from "./pages/ButtonPage";
 import InputPage from "./pages/InputPage";
 import GridPage from "./pages/GridPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
           </aside>
           <section>
             <Switch>
-              <Route exact path="/">
+              <Route path="/">
+                <ButtonPage pageTitle="Buttons" />
+              </Route>
+              <Route exact path="/colors">
                 <ColorPage pageTitle="Colors" />
               </Route>
               <Route path="/typography">
@@ -26,9 +30,6 @@ function App() {
               <Route path="/spaces">
                 <SpacePage pageTitle="Spaces" />
               </Route>
-              <Route path="/buttons">
-                <ButtonPage pageTitle="Buttons" />
-              </Route>
               <Route path="/inputs">
                 <InputPage pageTitle="Inputs" />
               </Route>
@@ -36,6 +37,7 @@ function App() {
                 <GridPage pageTitle="Grid" />
               </Route>
             </Switch>
+            <Footer />
           </section>
         </main>
       </Router>

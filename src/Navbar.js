@@ -7,7 +7,12 @@ const Navbar = () => {
       </NavLink>
       <ul className="navbar">
         <li>
-          <NavLink exact to="/" activeClassName="active">
+          <NavLink to="/" activeClassName="active">
+            Buttons
+          </NavLink>
+        </li>
+        <li>
+          <NavLink exact to="/colors" activeClassName="active">
             Colors
           </NavLink>
         </li>
@@ -19,11 +24,6 @@ const Navbar = () => {
         <li>
           <NavLink to="/spaces" activeClassName="active">
             Spaces
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/buttons" activeClassName="active">
-            Buttons
           </NavLink>
         </li>
         <li>

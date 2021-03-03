@@ -57,6 +57,34 @@ const ButtonPage = (props) => {
       </div>
       <div className="card">
         <div className="card-header">
+          <h5>Buttons with icons</h5>
+        </div>
+        <div className="card-body">
+          <pre>
+            <code>
+              {`<Button startIcon="favorite" />`}{" "}
+              {`<Button endIcon="favorite" />`} {`<Button icon="favorite" />`}
+            </code>
+          </pre>
+          <Button text="Start Icon" color="primary" startIcon="favorite" />
+          <Button text="End Icon" color="success" endIcon="favorite" />
+          <Button
+            text="Start Icon"
+            color="warning"
+            variant="outline"
+            startIcon="add_shopping_cart"
+          />
+          <Button
+            text="End Icon"
+            color="danger"
+            variant="outline"
+            endIcon="add_shopping_cart"
+          />
+          <Button color="dark" variant="text" icon="assignment" />
+        </div>
+      </div>
+      <div className="card">
+        <div className="card-header">
           <h5>Disabled shadow</h5>
         </div>
         <div className="card-body">
@@ -81,34 +109,6 @@ const ButtonPage = (props) => {
           <Button text="Disabled" color="warning" disableShadow disabled />
           <Button text="Disabled" color="info" disableShadow disabled />
           <Button text="Disabled" color="dark" disableShadow disabled />
-        </div>
-      </div>
-      <div className="card">
-        <div className="card-header">
-          <h5>Buttons with icons</h5>
-        </div>
-        <div className="card-body">
-          <pre>
-            <code>
-              {`<Button startIcon="favorite" />`}{" "}
-              {`<Button endIcon="favorite" />`} {`<Button icon="favorite" />`}
-            </code>
-          </pre>
-          <Button text="Start Icon" color="primary" startIcon="favorite" />
-          <Button text="End Icon" color="primary" endIcon="favorite" />
-          <Button
-            text="Start Icon"
-            color="primary"
-            variant="outline"
-            startIcon="add_shopping_cart"
-          />
-          <Button
-            text="End Icon"
-            color="primary"
-            variant="outline"
-            endIcon="add_shopping_cart"
-          />
-          <Button color="primary" variant="text" icon="assignment" />
         </div>
       </div>
     </>

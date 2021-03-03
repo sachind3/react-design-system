@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">Xensai Homepage</h1>
+<h1 align="center">React Design System</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://xensai-homepage-by-sachin.netlify.app">
+    <a href="https://design-system-by-sachin.netlify.app">
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/xobQBuf8zWWmiYMIAZe0">
+    <a href="https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY">
       Challenge
     </a>
   </h3>
@@ -31,7 +31,7 @@
 
 ## Overview
 
-![screenshot](https://xensai-homepage-by-sachin.netlify.app/screenshot.png)
+![screenshot](https://design-system-by-sachin.netlify.app/screenshot.png)
 
 ## Features
 

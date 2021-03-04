@@ -1,0 +1,97 @@
+@import "../variable.scss";
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+.input {
+  padding: 0.2rem 0.8rem;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 0.4rem;
+  transition: $transition;
+  display: inline-block;
+  border: 1px solid $color--dafault;
+  width: 100%;
+  &:disabled {
+    pointer-events: none;
+  }
+  &:hover,
+  &:focus {
+    border: 1px solid shade($color--dafault, 20%);
+  }
+  &.input-error {
+    border-color: $color--danger;
+  }
+}
+
+// solid buttons
+@each $name, $color in $colors {
+  .btn--#{$name}--solid {
+    background: $color;
+    color: $color--white;
+    border: 1px solid $color--transparent;
+    box-shadow: 0 2px 4px -2px darken($color: $color, $amount: 40);
+    &:hover,
+    :focus {
+      background: shade($color, 20%);
+    }
+    &:disabled {
+      background: tint($color, 50%);
+    }
+  }
+}
+
+// sizes buttons
+
+@each $name, $size in $sizes {
+  .input--#{$name} {
+    height: $size;
+  }
+}
+
+// input group
+
+.input-group {
+  position: relative;
+  margin-bottom: 0.5rem;
+  label {
+    font-weight: 400;
+    display: block;
+    margin-bottom: 0.2rem;
+    &.label-error {
+      color: $color--danger;
+    }
+  }
+  .input-control {
+    position: relative;
+  }
+  .startIcon {
+    position: absolute;
+    left: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .endIcon {
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &.input-startIcon {
+    input {
+      padding-left: 2.2rem;
+    }
+  }
+  &.input-endIcon {
+    input {
+      padding-right: 2.2rem;
+    }
+  }
+  .helpertext {
+    font-weight: 300;
+    font-size: 80%;
+    color: $color--dafault;
+  }
+}

@@ -12,6 +12,11 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/inputs" activeClassName="active">
+            Inputs
+          </NavLink>
+        </li>
+        <li>
           <NavLink exact to="/colors" activeClassName="active">
             Colors
           </NavLink>
@@ -24,11 +29,6 @@ const Navbar = () => {
         <li>
           <NavLink to="/spaces" activeClassName="active">
             Spaces
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/inputs" activeClassName="active">
-            Inputs
           </NavLink>
         </li>
         <li>

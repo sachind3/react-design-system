@@ -18,8 +18,11 @@ function App() {
           </aside>
           <section>
             <Switch>
-              <Route path="/">
+              <Route exact path="/">
                 <ButtonPage pageTitle="Buttons" />
+              </Route>
+              <Route path="/inputs">
+                <InputPage pageTitle="Inputs" />
               </Route>
               <Route exact path="/colors">
                 <ColorPage pageTitle="Colors" />
@@ -29,9 +32,6 @@ function App() {
               </Route>
               <Route path="/spaces">
                 <SpacePage pageTitle="Spaces" />
-              </Route>
-              <Route path="/inputs">
-                <InputPage pageTitle="Inputs" />
               </Route>
               <Route path="/grid">
                 <GridPage pageTitle="Grid" />

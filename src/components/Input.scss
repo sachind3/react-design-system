@@ -64,6 +64,9 @@
       color: $color--danger;
     }
   }
+  input:disabled {
+    background: tint($color--dafault, 70%);
+  }
   .input-control {
     position: relative;
   }

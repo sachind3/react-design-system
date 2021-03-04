@@ -81,6 +81,22 @@ const InputPage = (props) => {
           />
         </div>
       </div>
+      <div className="card">
+        <div className="card-header">
+          <h5>Input Disabled</h5>
+        </div>
+        <div className="card-body">
+          <pre>
+            <code>{`<Input type="text" label="Input text" disabled />`}</code>
+          </pre>
+          <Input
+            label="Input text"
+            id="label9"
+            placeholder="disabled text"
+            disabled
+          />
+        </div>
+      </div>
     </>
   );
 };
